@@ -1,0 +1,26 @@
+<div class="hero">
+    <div class="form-box">
+        <div class="button-box">
+            <div id="btn"></div>
+            <button type="button" class="toggle-btn" (click)="login()">Log In</button>
+            <button type="button" class="toggle-btn" (click)="register()">Register</button>
+        </div>
+        <div class="social-icons">
+            <img src="/assets/img/login-registration/fb.png">
+            <img src="/assets/img/login-registration/tw.png">
+            <img src="/assets/img/login-registration/gp.png">
+        </div>
+        <form id="login" class="input-group">
+            <input type="text" class="input-field" placeholder="User Id" required>
+            <input type="text" class="input-field" placeholder="Enter Password" required>
+            <button type="submit" class="submit-btn mt-3">Log in</button>
+        </form>
+        <form id="register" class="input-group">
+            <input type="text" class="input-field" placeholder="User Id" required>
+            <input type="email" class="input-field" placeholder="Email Id" required>
+            <input type="text" class="input-field" placeholder="Enter Password" required>
+            <button type="submit" class="submit-btn mt-3">Register</button>
+        </form>
+    </div>
+
+</div>

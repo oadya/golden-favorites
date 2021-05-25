@@ -1,0 +1,202 @@
+
+
+/* 
+parent property :
+
+display: flex;
+flex-direction: row; -> default value of flex-direction
+justify-content: space-between; /* change items relative to the Main Axis here for row -> top left to right
+align-items: stretch;  -> default value align-items,  change items relative to the Cross Axis here for row -> top left to bottom 
+align-content: center; --> *work when we have more than 1 line -> define what append with extra space relative to cross axis 
+
+*/
+
+/*
+ Items property : 
+
+    order: 1; -> order of flex item 
+    align-self: flex-start; ->  how flex item in position relative to cross axis
+    flex-grow: 1; -> grow of item , how item act when item :increase
+    flex-shrink: 2; -> shrink how item decrease
+    flex-basis: auto; -> size of item depending on the Main Axis it not the width or height !!!
+    flex: 1 2 auto; --> flex-grow + flex-shrink + flex-basis
+*/
+
+
+.container {
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-around;
+    
+    background-color:grey;
+
+}
+.demo-2, .demo-3 ,.demo-4{
+    /*thes are flex properties we can apply on parent element*/
+    display: flex;
+    flex-direction: row; /*default value of flex-direction*/
+    justify-content: space-between; /* change items relative to the Main Axis here for row -> top left to right*/
+    align-items: stretch; /*default value align-items*/ /* change items relative to the Cross Axis here for row -> top left to bottom */
+    align-content: center; /*work when we have more than 1 line -> define what append with extra space relative to cross axis*/
+
+    margin: 20px 0;
+    background-color: grey;
+}
+
+.demo-2-explain, .demo-2-ex, .demo-3-explain, .demo-4-explain, .demo-4-ex, .demo-5-explain , .demo-5-ex{
+    background-color:white;
+}
+
+.demo-3-ex{
+    background-color: grey;
+}
+.demo-2-explain  , .demo-3-explain, .demo-4-explain,.demo-5-explain{
+    margin-right: 20px;
+}
+
+
+.demo-2-explain{
+  flex: 1;
+  order: 1;
+  
+}
+
+.demo-2-ex{
+    display: flex;
+    justify-content: space-around;
+    order: 2;
+    flex: 4;
+}
+
+.demo-2-main-content{
+    flex-grow: 3;
+    flex-shrink: 1;
+    flex-basis: 200px;
+    order: 2;
+}
+
+.demo-2-sidebar-one{
+    flex: 1 2 200px; /* flex-grow: 1;  flex-shrink: 2; flex-basis: 200px;*/
+    order: 1;
+    
+}
+
+.demo-2-sidebar-two{
+    flex: 1 2 200px; /* here flex-shrink: 2; => this element will shrink two time faster than .demo-2-main-content ( flex-shrink: 1)  */
+    order: 3;
+}
+
+
+
+.demo-3-explain{
+  order: 1; 
+  flex: 1;
+}
+
+.demo-3-ex{
+ order: 2;
+ flex: 4;
+}
+
+.demo-3-block{
+    padding: 10px 10px;
+    flex-basis: 30%;
+}
+
+.demo-3-block:nth-child(1){
+    background-color: violet;
+}
+
+.demo-3-block:nth-child(2){
+    background-color: turquoise;
+}
+
+
+.demo-3-block:nth-child(3){
+    background-color: darkorchid;
+}
+
+@media(min-width:900px){
+    .demo-3-ex{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+       align-items: stretch;
+       }
+}
+
+
+
+.demo-4-explain{
+    order: 1; 
+    flex: 1;
+  }
+  
+  .demo-4-ex{
+   order: 2;
+   flex: 4;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   flex-wrap: wrap;
+   align-content: center; /* center my items define what append with extra space relaive to cross axis*/
+    
+   
+  }
+  
+  .demo-4-block {
+    width: 100px;
+    height: 100px;
+    background-color: tomato;
+    display: flex;
+  }
+
+  .center-me{
+      font-size: 50px;
+      margin: auto;
+      text-transform: uppercase;
+  }
+
+
+  
+  .demo-5{
+      display: flex;
+      flex-flow: row nowrap;/* <=> flex-direction: row; flex-wrap: nowrap;*/
+  }
+
+  .demo-5-explain{
+      flex: 1;
+      order: 1;
+  }
+
+  .demo-5-ex{
+      flex: 4;
+      order: 2;
+      display: flex;
+  }
+
+  
+.demo-5-first{
+    padding: 10px;
+}
+.demo-5-first, .demo-5-second{
+ flex: 1;
+}
+
+.demo-5-second{
+    display: flex;
+    flex-direction: column;
+}
+
+.demo-5-second-a{
+    background-color:chartreuse ;
+    flex: 1;
+    
+}
+
+.demo-5-second-b{
+    background-color:cornflowerblue;
+    flex: 1;
+}
+
+

@@ -1,0 +1,12 @@
+<div class="header">
+    <h1 mat-dialog-title>{{ data.title }}</h1>
+</div>
+<div mat-dialog-content>
+    <div [innerHTML]="data.message" style="font-size: 14px;" class="mb-3">
+
+    </div>
+</div>
+<div mat-dialog-actions class="text-center">
+    <button class="btn" (click)="confirm()" mat-raised-button style="background-color: #83185F; color:white">OK
+    </button>
+</div>

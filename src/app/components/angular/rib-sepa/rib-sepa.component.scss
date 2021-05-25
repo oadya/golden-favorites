@@ -1,0 +1,43 @@
+
+
+.error {
+    color: #f44336;
+    font-size: 10.5px;
+}
+
+.float-r{
+  float: right;
+}
+
+button{
+    background-color: var(--main-color);
+    border-radius: 10px;
+    color: #fff;
+    font-size: .8rem;
+    padding: .5rem 1rem;
+    border: 1px solid var(--main-color)
+}
+
+.title::before{
+  content: '';
+  background-color: #7b1798;
+  height: 5px;
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  transform: translateY(53px);
+}
+
+
+
+.title::after{
+  content: '';
+  background-color: #7b1798;
+  height: 10px;
+  width: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  transform: translateY(8px);
+}

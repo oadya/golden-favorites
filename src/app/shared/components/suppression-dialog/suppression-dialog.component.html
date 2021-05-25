@@ -1,0 +1,14 @@
+<div class="header">
+    <h1 mat-dialog-title>{{ data.title }}</h1>
+</div>
+<div mat-dialog-content>
+    <div [innerHTML]="data.message" style="font-size: 14px; text-align: center;" class="mb-3">
+
+    </div>
+</div>
+<div mat-dialog-actions style="text-align: center;">
+    <button class="btn btn-cancel" mat-raised-button mat-dialog-close
+        style="margin-right:10px;background-color: #83185F; color:white" (click)="cancel()">Non</button>
+    <button class="btn" (click)="confirm()" mat-raised-button
+        style="background-color: #83185F; color:white">Oui</button>
+</div>

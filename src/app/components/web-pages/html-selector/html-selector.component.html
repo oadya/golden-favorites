@@ -1,0 +1,117 @@
+<!--General selector-->
+<section class="universal">
+    <h2 style="background-color: #ddd !important;">General selector (.universal *) : select all elements inside
+        .universal</h2>
+    <p>content of paragraphe</p>
+    <ul>
+        <li>Items 1</li>
+        <li>Items 2</li>
+        <li> <a href="#">Items 3</a></li>
+    </ul>
+</section>
+
+<!--child selector-->
+<section class="child-selector">
+    <h2 style="background-color: #ddd !important;">Child selector (.child-selector p ) : select all p elements inside
+        .child-selector</h2>
+    <p>content of paragraphe </p>
+    <code>content of code </code>
+    <ul>
+        <li>Items 1</li>
+        <li>Items 2</li>
+        <li> <a href="#">Items 3</a></li>
+    </ul>
+
+    <p>content of paragraphe </p>
+    <div>
+        <p>content of paragraphe inside a div</p>
+    </div>
+</section>
+
+<!--direct child selector-->
+<section class="direct-child-selector">
+    <h2 style="background-color: #ddd !important;">direct Child selector (.child-selector > p ) : select all p elements
+        that are direct children of .child-selector</h2>
+    <p>content of paragraphe </p>
+
+    <code>content of code </code>
+    <ul>
+        <li>Items 1</li>
+        <li>Items 2</li>
+        <li> <a href="#">Items 3</a></li>
+    </ul>
+
+    <p>content of paragraphe </p>
+    <div>
+        <p>content of paragraphe inside a div</p>
+    </div>
+</section>
+
+
+<!--adjacent sibling-->
+<section class="adjacent-sibling">
+    <h2 style="background-color: #ddd !important;">adjacent selector/sibling (ul + p ) : select the first p element
+        after ul element</h2>
+    <p>content of paragraphe 1 </p>
+    <p>content of paragraphe 2 </p>
+
+    <code>content of code </code>
+    <ul>
+        <li>Items 1</li>
+        <li>Items 2</li>
+        <li> <a href="#">Items 3</a></li>
+    </ul>
+
+    <p>content of paragraphe 3 </p>
+
+    <p>content of paragraphe 4 </p>
+
+    <ul>
+        <li>Items 3</li>
+        <li>Items 4</li>
+    </ul>
+    <p>content of paragraphe 5</p>
+    <div>
+        <p>content of paragraphe 6 inside a div</p>
+    </div>
+    <p>content of paragraphe 7</p>
+</section>
+
+
+<!--general sibling-->
+<section class="general-sibling">
+    <h2 style="background-color: #ddd !important;">general sibling (ol ~ p ) : select all the p element after ol element
+    </h2>
+    <p>content of paragraphe 1 </p>
+    <p>content of paragraphe 2 </p>
+
+    <code>content of code </code>
+    <ol>
+        <li>Items 1</li>
+        <li>Items 2</li>
+        <li> <a href="#">Items 3</a></li>
+    </ol>
+
+    <p>content of paragraphe 3 </p>
+
+    <p>content of paragraphe 4 </p>
+
+
+
+    <div>
+        <p>content of paragraphe 5 inside a div</p>
+    </div>
+    <p>content of paragraphe 6</p>
+</section>
+
+<!--atribute -->
+<section class="atribute">
+    <h2 style="background-color: #ddd !important;">atribute selector []</h2>
+    <a href="https://www.google.com/" class="google" target="_blank">google.com</a>
+    <a href="https://fr.yahoo.com/" class="yahoo">yahoo.com</a>
+    <a href="https://www.w3schools.com/" class="w3schools">www.w3schools.com</a>
+    <a href="https://www.typescriptlang.org/" class="typescriptlang">typescriptlang.org</a>
+    <a href="https://www.tutorialspoint.com/" class="tutorialspoint">tutorialspoint.com</a>
+    <a href="#" class="another-link">another link</a>
+    <a href="https://www.udemy.com/" class="udemy">udemy.com</a>
+</section>

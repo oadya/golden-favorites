@@ -1,0 +1,26 @@
+<header>
+    <h2>
+        <label for="">
+            <a (click)="toggleMen()">
+                <span class="las la-bars"></span>
+            </a>
+        </label>
+        <a [routerLink]="['./dashboard']" routerLinkActive="active">
+            <span>Golden Favorites</span>
+        </a>
+
+    </h2>
+
+    <div class="search-wrapper">
+        <span class="las la-search"></span>
+        <input type="search" placeholder="Seach here">
+    </div>
+
+    <div class="user-wrapper">
+        <img src="/assets/img/template-website-one/img-2.jpg" alt="" width="30px" height="30px">
+        <div>
+            <h4>Mr. ADYA Orphée</h4>
+            <small>Super admin</small>
+        </div>
+    </div>
+</header>

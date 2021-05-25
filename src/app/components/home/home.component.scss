@@ -1,0 +1,27 @@
+.cards{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 2rem;
+    margin-top: 1rem;
+}
+
+.card-single{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: 200px;
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 50%;
+    
+ box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+   
+}
+
+
+a {
+    color: var(--color-darK) !important;
+    text-decoration: none;
+    background-color: transparent;
+  }

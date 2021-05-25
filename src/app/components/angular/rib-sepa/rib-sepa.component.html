@@ -1,0 +1,199 @@
+<div class="">
+    <div class="text-center mb-3">
+        <h2 class="title">Angular Reactive Form & File Upload </h2>
+    </div>
+    <div class="text-right mb-2">
+        <span class="">
+            <button type="submit"
+                (click)="selectedAppearance === 'fill' ? selectedAppearance = 'outline'  : selectedAppearance = 'fill' "
+                class="btn">
+                Changer de mode</button>
+        </span>
+    </div>
+    <form [formGroup]="ribForm" (ngSubmit)="onFormSubmit()">
+
+        <div class="row">
+            <div class="col-6">
+                <div class="form-group  row mb-0 d-flex flex-wrap">
+                    <div class="col-4">
+                        <mat-form-field appearance="none" class="col pl-0" style="min-width: 150px;">
+                            <input matInput type="text" value="Nom de la banque *" readonly>
+                        </mat-form-field>
+                    </div>
+                    <div class="col ml-0 pl-0">
+                        <mat-form-field class="col" appearance="{{selectedAppearance}}" style="min-width: 220px;">
+                            <mat-label>Nom de la banque</mat-label>
+                            <input matInput type="text" id="nomBanque3" maxlength="24" formControlName="nomBanque"
+                                upperCase required />
+                            <mat-error *ngIf="nomBanque?.hasError('required') && nomBanque?.touched">
+                                Nom de la banque est obligatoire
+                            </mat-error>
+                        </mat-form-field>
+                    </div>
+                </div>
+
+                <div class="form-group  row mb-0  d-flex flex-wrap">
+                    <div class="col-4">
+                        <mat-form-field appearance="none" style="min-width: 150px;">
+                            <input matInput type="text" value="Titulaire du compte *" readonly>
+                        </mat-form-field>
+                    </div>
+                    <div class="col ml-0 pl-0 ">
+                        <mat-form-field class="col" appearance="{{selectedAppearance}}" style="min-width: 220px;">
+                            <mat-label>Titulaire du compte</mat-label>
+                            <input matInput type="text" id="titulaireCompte" maxlength="24"
+                                formControlName="titulaireCompte" required />
+                            <mat-error *ngIf="titulaireCompte?.hasError('required') && titulaireCompte?.touched">
+                                Titulaire du compte est obligatoire
+                            </mat-error>
+                        </mat-form-field>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6"></div>
+
+        </div>
+
+
+
+        <div class="form-group mb-0">
+            <label for="exampleInputEmail1">IBAN *</label>
+            <div class="col-10 pl-0">
+                <mat-form-field class="col-6 pl-0" appearance="{{selectedAppearance}}">
+                    <mat-label>IBAN</mat-label>
+                    <input matInput type="text" id="iban" formControlName="iban" upperCase
+                        mask="AAAA 0000 0000 0000 0000 0000 000" required />
+                    <mat-error *ngIf="iban?.hasError('required') && iban?.touched">
+                        IBAN est obligatoire
+                    </mat-error>
+                </mat-form-field>
+            </div>
+        </div>
+
+        <div>
+            <div style="font-weight: 700;">RIB *</div>
+
+            <div class=" form-group row pt-2 mb-0">
+
+                <div class="col-3 px-0">
+                    <mat-form-field class="col-12" appearance="{{selectedAppearance}}">
+                        <mat-label>Banque</mat-label>
+                        <input matInput type="text" numbersOnly formControlName="codeBanque" id="codeBanque"
+                            maxlength="5" required />
+                        <mat-error
+                            *ngIf="codeBanque?.hasError('required') && (codeBanque?.touched || codeBanque?.dirty)">Code
+                            banque est
+                            obligatoire
+                        </mat-error>
+                        <mat-error *ngIf="!codeBanque?.hasError('required') && codeBanque?.hasError('minlength')">
+                            5 caractères numériques obligatoires
+                        </mat-error>
+                    </mat-form-field>
+                </div>
+
+                <div class="col-3 px-0">
+                    <mat-form-field class="col-12" appearance="{{selectedAppearance}}">
+                        <mat-label>Guichet</mat-label>
+                        <input matInput type="text" numbersOnly formControlName="codeGuichet" id="codeGuichet"
+                            maxlength="5" required />
+                        <mat-error
+                            *ngIf="codeGuichet?.hasError('required') && (codeGuichet?.touched || codeGuichet?.dirty)">
+                            Code
+                            guichet est
+                            obligatoire
+                        </mat-error>
+                        <mat-error *ngIf="!codeGuichet?.hasError('required') && codeGuichet?.hasError('minlength')">
+                            5 caractères numériques obligatoires
+
+                        </mat-error>
+                    </mat-form-field>
+                </div>
+
+
+                <div class="col-3 px-0">
+                    <mat-form-field class="col-12" appearance="{{selectedAppearance}}">
+                        <mat-label>N° Compte</mat-label>
+                        <input matInput type="text" numbersOnly formControlName="numCompte" id="numCompte"
+                            maxlength="11" required />
+                        <mat-error *ngIf="numCompte?.hasError('required') && (numCompte?.touched || numCompte?.dirty)">
+                            N° compte est
+                            obligatoire
+                        </mat-error>
+                        <mat-error *ngIf="!numCompte?.hasError('required') && numCompte?.hasError('minlength')">
+                            11 caractères numériques obligatoires
+                        </mat-error>
+                    </mat-form-field>
+
+                </div>
+
+
+                <div class="col-3 px-0">
+                    <mat-form-field class="col-7" appearance="{{selectedAppearance}}">
+                        <mat-label>Clé</mat-label>
+                        <input matInput type="text" numbersOnly formControlName="cle" id="cle" maxlength="2" required />
+                        <mat-error *ngIf="cle?.hasError('required') && (cle?.touched || cle?.dirty)">Clé est
+                            obligatoire
+                        </mat-error>
+                        <mat-error *ngIf="!cle?.hasError('required') && cle?.hasError('minlength')">
+                            2 caractères obligatoires
+                        </mat-error>
+                    </mat-form-field>
+
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="form-group mb-1">
+            <label for="exampleInputEmail1">BIC *</label>
+            <div class="col-10 pl-0">
+                <mat-form-field class="col-6 pl-0" appearance="{{selectedAppearance}}">
+                    <mat-label>BIC</mat-label>
+                    <input matInput type="text" id="codeBIC" formControlName="codeBIC" required upperCase
+                        mask="AAAAAAAA||AAAAAAAAAAA" />
+                    <mat-error *ngIf="codeBIC?.hasError('required') && codeBIC?.touched">BIC est obligatoire
+                    </mat-error>
+                    <mat-error
+                        *ngIf="!codeBIC?.hasError('required') && (codeBIC?.hasError('minlength') ||  codeBIC?.hasError('maxlength') ) ">
+                        8 ou 11 caractères alphanumériques
+                    </mat-error>
+                </mat-form-field>
+            </div>
+
+        </div>
+
+        <div>
+            <p class="mb-0">Sélectionner le fichier à importer (PNG, JPG ou PDF)</p>
+        </div>
+        <div class="form-group row">
+            <div class="col-12 pl-0">
+                <label class="btn btn-default">
+                    <input type="file" formControlName="filesToUpload" (change)="onSelectFile($event)" />
+                </label>
+            </div>
+
+            <div class="col-12 error"
+                *ngIf="filesToUpload?.hasError('required') && filesToUpload?.touched && isFileSelected">
+                Séléectionnez un
+                fichier</div>
+
+            <div class="col-12 error"
+                *ngIf="!filesToUpload?.hasError('required') && filesToUpload?.hasError('inValidExt') && !isFileEmpty">
+                Le fichier doit être uniquement de type png, jpg ou pdf !</div>
+
+            <div class="col-12 error"
+                *ngIf="nameFilesToUpload?.hasError('required') && !nameFilesToUpload?.hasError('inValidExt') && !isFileEmpty">
+                Nom
+                du fichier obligatoire</div>
+        </div>
+
+        <button type="submit" class="btn buttonColor" [disabled]="!ribForm.valid">
+            <i class="fa fa-save" style="padding-right: 5px;" aria-hidden="true"></i>
+            Enregistrer</button>
+
+    </form>
+
+
+</div>

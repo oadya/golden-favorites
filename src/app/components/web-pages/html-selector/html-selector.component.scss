@@ -1,0 +1,93 @@
+/*body{
+    background-color: #f5f5f5;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.2rem;
+    padding: 10px 50px;
+
+}*/
+
+
+/* select all  elements inside .universal */
+.universal * { 
+ background-color: red;
+
+}
+
+/* select all p elements inside .child-selector */
+.child-selector p { 
+    background-color: green;
+}
+
+   
+/* select all p elements that are direct children of .child-selector */
+.direct-child-selector > p { 
+    background-color: blue;
+}
+
+/* select the first p element after ul element */
+ul + p { 
+    background-color: yellow;
+}
+
+/* select all the p element after ol element */
+ol ~ p { 
+    background-color: violet;
+}
+
+/* select a link with that have an atttibute target="_blank"*/
+a[target="_blank"]{ 
+       color: brown;
+}
+
+/* select a link with that have an atttibute target="_blank"*/
+a[target="_blank"]::after{ 
+    content: '(content added after)';
+}
+
+/* select a link with href=https://www.w3schools.com/*/
+a[href="https://www.w3schools.com/"]{
+    color: pink;
+}
+
+/* select a link with class start with another*/
+a[class|="another"] { 
+    color: red;
+}
+
+/*select a link where class content the word  udemy  */
+a[class*="udemy"] { 
+    color: orange;
+}
+
+/* a link where href start with https://www.typescriptlang  */
+a[href^="https://www.typescriptlang"] { 
+    color: purple;
+}
+
+/* select a link where href end with tutorialspoint.com/  */
+a[href$="tutorialspoint.com/"] { 
+    color: palegreen;
+}
+
+/*select a link where href content the word #   */
+a[href*="#"] { 
+    color: black;
+}
+   
+   
+section{
+    margin: 5px 0;
+    background-color: white;
+}
+
+h2::first-letter{
+    text-transform: uppercase;
+}
+
+ul a:hover{
+    color: red;
+}
+
+ol a:hover{
+    color:pink;
+}
