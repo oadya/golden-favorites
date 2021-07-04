@@ -2,8 +2,11 @@
 
 
 :root{
-    --main-color:#dd2f6e;
-    --main-color-80:#dd2f6e;
+    //--main-color:#dd2f6e;
+    --main-color:#7b1798;
+    --main-color-80:rgb(123,23,152,0.8);
+    
+   // --main-color-80:#dd2f6e;
     --color-darK:#1D2231;
     --text-grey:#8390AF;
   
@@ -28,4 +31,23 @@
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons");
 @import '~@angular/material/prebuilt-themes/indigo-pink.css'; 
 
+
+.even { color: #ffffff; }
+.odd { color: #eeeeee; }
+
+
+li {
+  width: 100%;
+  margin-bottom: 1.3rem;
+  padding-left: 2rem;
+
+}
+
+a {
+  padding-left: 1rem;
+  display: block;
+  font-size: 1.1rem;
+  color: var(--main-color-80);
+
+}
 

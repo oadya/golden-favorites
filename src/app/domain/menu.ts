@@ -7,6 +7,47 @@ export let menu: NavItem[] = [
         route: 'dashboard'
     },
     {
+        displayName: 'Java',
+        iconName: '',
+        route: 'java'
+    },
+    {
+        displayName: 'Spring Boot',
+        iconName: '',
+        route: 'spring-boot'
+    },
+    {
+        displayName: 'Spring Batch',
+        iconName: '',
+        route: 'spring-batch'
+    },
+
+    {
+        displayName: 'Jenkins  DevOps CI/CD',
+        iconName: '',
+        route: 'jenkins'
+    },
+    {
+        displayName: 'Maven',
+        iconName: '',
+        route: 'maven'
+    },
+    {
+        displayName: 'Docker',
+        iconName: '',
+        route: 'docker'
+    },
+    {
+        displayName: 'NoSQL & Big Data',
+        iconName: '',
+        route: 'nosql'
+    },
+    {
+        displayName: 'Bases de données',
+        iconName: '',
+        route: 'bases-donnees'
+    },
+    {
         displayName: 'Angular',
         iconName: '',
         route: 'angular',
@@ -19,53 +60,59 @@ export let menu: NavItem[] = [
         ]
     },
     {
-        displayName: 'Pages web',
+        displayName: 'Templates HTML & CSS',
         iconName: '',
-        route: 'pages-web',
+        route: 'templates-html-css',
         children: [
             {
                 displayName: 'Business Website',
                 iconName: '',
-                route: 'pages-web/business-website'
+                route: 'templates-html-css/business-website'
             },
             {
                 displayName: 'Ecommerce website',
                 iconName: '',
-                route: 'pages-web/ecommerce-website'
+                route: 'templates-html-css/ecommerce-website'
             },
 
             {
                 displayName: 'Drop down menu',
                 iconName: '',
-                route: 'pages-web/drop-down-menu'
+                route: 'templates-html-css/drop-down-menu'
             },
 
             {
                 displayName: 'Fitness website',
                 iconName: '',
-                route: 'pages-web/fitness-website'
+                route: 'templates-html-css/fitness-website'
             },
 
             {
                 displayName: 'Login & Registration',
                 iconName: '',
-                route: 'pages-web/login-registration'
+                route: 'templates-html-css/login-registration'
             },
             {
                 displayName: 'Template website',
                 iconName: '',
-                route: 'pages-web/template-website-one'
+                route: 'templates-html-css/template-website-one'
             },
             {
                 displayName: 'Flex Box',
                 iconName: '',
-                route: 'pages-web/flex-box'
+                route: 'templates-html-css/flex-box'
             },
             {
                 displayName: 'Sélecteurs CSS',
                 iconName: '',
-                route: 'pages-web/selecteurs-css'
+                route: 'templates-html-css/selecteurs-css'
             }
         ]
-    }
+    },
+
+    {
+        displayName: 'GIT',
+        iconName: '',
+        route: 'git'
+    },
 ];
