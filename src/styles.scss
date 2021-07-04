@@ -44,10 +44,12 @@ li {
 }
 
 a {
+  color: var(--main-color-80);
+}
+
+.mat-list-item  a{
   padding-left: 1rem;
   display: block;
   font-size: 1.1rem;
-  color: var(--main-color-80);
-
+  
 }
-
