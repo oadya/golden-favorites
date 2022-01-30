@@ -41,8 +41,6 @@ import { TemplateWebsiteOneComponent } from './components/web-pages/template-web
 import { DropDownMenuComponent } from './components/web-pages/drop-down-menu/drop-down-menu.component';
 import { LoginRegistretionComponent } from './components/web-pages/login-registretion/login-registretion.component';
 import { FitnessWebsiteComponent } from './components/web-pages/fitness-website/fitness-website.component';
-import { SpringBootComponent } from './components/spring-boot/spring-boot.component';
-import { SpringBatchComponent } from './components/spring-batch/spring-batch.component';
 import { JavaComponent } from './components/java/java.component';
 import { BasesDonneesComponent } from './components/bases-donnees/bases-donnees.component';
 import { JenkinsComponent } from './components/jenkins/jenkins.component';
@@ -50,6 +48,9 @@ import { MavenComponent } from './components/maven/maven.component';
 import { DockerComponent } from './components/docker/docker.component';
 import { NoSqlComponent } from './components/no-sql/no-sql.component';
 import { GitComponent } from './components/git/git.component';
+import { SpringComponent } from './spring/spring.component';
+import { SpringBootComponent } from './spring/spring-boot/spring-boot.component';
+import { SpringBatchComponent } from './spring/spring-batch/spring-batch.component';
 
 registerLocaleData(localeFr);
 
@@ -98,7 +99,8 @@ export const MY_FORMATS = {
     MavenComponent,
     DockerComponent,
     NoSqlComponent,
-    GitComponent
+    GitComponent,
+    SpringComponent
   ],
   imports: [
     HttpClientModule,

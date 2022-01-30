@@ -9,6 +9,10 @@ export class SpringBootComponent implements OnInit {
 
   allLinks: any[] = [
     {
+      "title": "Spring-Boot-Exercices",
+      "link": "https://github.com/oadya/Spring-Boot-Exercices",
+    },
+    {
       "title": "Spring Boot + JWT Token + Spring Security ",
       "link": "https://github.com/oadya/spring-boot-jwt-token-spring-security",
     },

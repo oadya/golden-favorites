@@ -12,16 +12,22 @@ export let menu: NavItem[] = [
         route: 'java'
     },
     {
-        displayName: 'Spring Boot',
+        displayName: 'Spring',
         iconName: '',
-        route: 'spring-boot'
+        route: 'spring',
+        children: [
+            {
+                displayName: 'Spring Boot',
+                iconName: '',
+                route: 'spring/spring-boot'
+            },
+            {
+                displayName: 'Spring Batch',
+                iconName: '',
+                route: 'spring/spring-batch'
+            }
+        ]
     },
-    {
-        displayName: 'Spring Batch',
-        iconName: '',
-        route: 'spring-batch'
-    },
-
     {
         displayName: 'Jenkins  DevOps CI/CD',
         iconName: '',
@@ -60,7 +66,7 @@ export let menu: NavItem[] = [
         ]
     },
     {
-        displayName: 'Templates HTML & CSS',
+        displayName: 'HTML & CSS',
         iconName: '',
         route: 'templates-html-css',
         children: [
