@@ -34,26 +34,6 @@ export let menu: NavItem[] = [
         route: 'jenkins'
     },
     {
-        displayName: 'Maven',
-        iconName: '',
-        route: 'maven'
-    },
-    {
-        displayName: 'Docker',
-        iconName: '',
-        route: 'docker'
-    },
-    {
-        displayName: 'NoSQL & Big Data',
-        iconName: '',
-        route: 'nosql'
-    },
-    {
-        displayName: 'Bases de données',
-        iconName: '',
-        route: 'bases-donnees'
-    },
-    {
         displayName: 'Angular',
         iconName: '',
         route: 'angular',
@@ -114,6 +94,26 @@ export let menu: NavItem[] = [
                 route: 'templates-html-css/selecteurs-css'
             }
         ]
+    },
+    {
+        displayName: 'Maven',
+        iconName: '',
+        route: 'maven'
+    },
+    {
+        displayName: 'Docker',
+        iconName: '',
+        route: 'docker'
+    },
+    {
+        displayName: 'NoSQL & Big Data',
+        iconName: '',
+        route: 'nosql'
+    },
+    {
+        displayName: 'Bases de données',
+        iconName: '',
+        route: 'bases-donnees'
     },
 
     {

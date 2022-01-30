@@ -10,6 +10,9 @@ export class MavenComponent implements OnInit {
 
   allLinks: any[] = [
     {
+      "title": "Maven projects & documentations",
+      "link": "https://github.com/oadya/Maven-Guru-Docs",
+    }, {
       "title": "MAVEN + JAXB",
       "link": "https://github.com/oadya/mb2g-jaxb",
     },
