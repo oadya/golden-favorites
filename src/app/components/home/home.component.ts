@@ -70,4 +70,7 @@ export class HomeComponent implements OnInit {
     this.router.navigate(['../git'], { relativeTo: this.route });
   }
 
+  linux(): void {
+    this.router.navigate(['../linux'], { relativeTo: this.route });
+  }
 }
