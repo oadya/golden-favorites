@@ -25,6 +25,27 @@ export class JavaComponent implements OnInit {
     },
   ];
 
+  
+  javaJAXBLinks: any[] = [
+    "https://www.baeldung.com/jvm-parameters",
+    "http://www.javawebtutor.com/articles/jaxb/jaxb_java_class_from_xsd.php",
+    "https://codesjava.com/how-to-generate-create-xml-schema-xsd-from-java-class-using-jaxb-in-eclipse",
+    "https://www.javacodegeeks.com/2014/12/jaxb-tutorial-xml-binding.html",
+    "https://howtodoinjava.com/jaxb/java-class-to-xsd-eclipse/",
+    "https://memorynotfound.com/generate-xsd-from-java-classes/",
+    "https://javabeat.net/use-trang-generate-xsd-xml/",
+    "https://www.baeldung.com/jaxb",
+    "https://howtodoinjava.com/jaxb/convert-json-to-java-object-moxy/",
+    "https://www.javacodegeeks.com/2014/12/jaxb-tutorial-xml-binding.html",
+    "https://www.petrikainulainen.net/tutorials/",
+    "https://www.baeldung.com/jaxb",
+    "https://www.geeksforgeeks.org/switch-statement-in-java/",
+    "http://tutorials.jenkov.com/java-internationalization/decimalformat.html",
+    "http://www.avajava.com/tutorials/categories/general-java",
+    "https://examples.javacodegeeks.com/core-java/xml/bind/jaxb-generate-classes-xsd/",
+      
+  ];
+
 
   javaOhersLinks: any[] = [
     "https://howtodoinjava.com/java/generics/complete-java-generics-tutorial/",
@@ -47,6 +68,7 @@ export class JavaComponent implements OnInit {
     "https://www.devglan.com/spring-boot/spring-boot-file-upload-download",
 
   ];
+
   constructor() { }
 
   ngOnInit(): void {
