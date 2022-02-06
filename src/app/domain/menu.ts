@@ -6,59 +6,7 @@ export let menu: NavItem[] = [
         iconName: 'dashboard',
         route: 'dashboard'
     },
-    {
-        displayName: 'Java',
-        iconName: '',
-        route: 'java'
-    },
-    {
-        displayName: 'Spring',
-        iconName: '',
-        route: 'spring',
-        children: [
-            {
-                displayName: 'Spring',
-                iconName: '',
-                route: 'spring/spring-link'
-            }, {
-                displayName: 'Spring Boot',
-                iconName: '',
-                route: 'spring/spring-boot'
-            },
-            {
-                displayName: 'Spring Batch',
-                iconName: '',
-                route: 'spring/spring-batch'
-            }
-        ]
-    },
-    {
-        displayName: 'Jenkins  DevOps CI/CD',
-        iconName: '',
-        route: 'jenkins'
-    },
 
-    {
-        displayName: 'Elastic Search',
-        iconName: '',
-        route: 'elasticsearch'
-    },
-    {
-        displayName: 'Angular',
-        iconName: '',
-        route: 'angular',
-        children: [
-            {
-                displayName: 'Angular',
-                iconName: '',
-                route: 'angular/angular-link'
-            }, {
-                displayName: 'Reactive form',
-                iconName: '',
-                route: 'angular/rib-sepa'
-            }
-        ]
-    },
     {
         displayName: 'HTML & CSS',
         iconName: '',
@@ -110,6 +58,54 @@ export let menu: NavItem[] = [
         ]
     },
     {
+        displayName: 'Spring',
+        iconName: '',
+        route: 'spring',
+        children: [
+            {
+                displayName: 'Spring',
+                iconName: '',
+                route: 'spring/spring-link'
+            }, {
+                displayName: 'Spring Boot',
+                iconName: '',
+                route: 'spring/spring-boot'
+            },
+            {
+                displayName: 'Spring Batch',
+                iconName: '',
+                route: 'spring/spring-batch'
+            }
+        ]
+    },
+    {
+        displayName: 'Java',
+        iconName: '',
+        route: 'java'
+    },
+
+    {
+        displayName: 'Angular',
+        iconName: '',
+        route: 'angular',
+        children: [
+            {
+                displayName: 'Angular',
+                iconName: '',
+                route: 'angular/angular-link'
+            }, {
+                displayName: 'Reactive form',
+                iconName: '',
+                route: 'angular/rib-sepa'
+            }
+        ]
+    },
+    {
+        displayName: 'Elastic Search',
+        iconName: '',
+        route: 'elasticsearch'
+    },
+    {
         displayName: 'Maven',
         iconName: '',
         route: 'maven'
@@ -119,14 +115,21 @@ export let menu: NavItem[] = [
         iconName: '',
         route: 'bases-donnees'
     },
+
+    {
+        displayName: 'Jenkins  DevOps CI/CD',
+        iconName: '',
+        route: 'jenkins'
+    },
+    {
+        displayName: 'Linux',
+        iconName: '',
+        route: 'linux'
+    },
     {
         displayName: 'Docker',
         iconName: '',
         route: 'docker'
-    }, {
-        displayName: 'Linux',
-        iconName: '',
-        route: 'linux'
     },
     {
         displayName: 'NoSQL & Big Data',
