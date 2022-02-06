@@ -17,6 +17,10 @@ export let menu: NavItem[] = [
         route: 'spring',
         children: [
             {
+                displayName: 'Spring',
+                iconName: '',
+                route: 'spring/spring-link'
+            }, {
                 displayName: 'Spring Boot',
                 iconName: '',
                 route: 'spring/spring-boot'
@@ -33,12 +37,22 @@ export let menu: NavItem[] = [
         iconName: '',
         route: 'jenkins'
     },
+
+    {
+        displayName: 'Elastic Search',
+        iconName: '',
+        route: 'elasticsearch'
+    },
     {
         displayName: 'Angular',
         iconName: '',
         route: 'angular',
         children: [
             {
+                displayName: 'Angular',
+                iconName: '',
+                route: 'angular/angular-link'
+            }, {
                 displayName: 'Reactive form',
                 iconName: '',
                 route: 'angular/rib-sepa'
@@ -101,9 +115,18 @@ export let menu: NavItem[] = [
         route: 'maven'
     },
     {
+        displayName: 'SQL',
+        iconName: '',
+        route: 'bases-donnees'
+    },
+    {
         displayName: 'Docker',
         iconName: '',
         route: 'docker'
+    }, {
+        displayName: 'Linux',
+        iconName: '',
+        route: 'linux'
     },
     {
         displayName: 'NoSQL & Big Data',
@@ -111,14 +134,8 @@ export let menu: NavItem[] = [
         route: 'nosql'
     },
     {
-        displayName: 'Bases de données',
-        iconName: '',
-        route: 'bases-donnees'
-    },
-
-    {
         displayName: 'GIT',
         iconName: '',
         route: 'git'
-    },
+    }
 ];

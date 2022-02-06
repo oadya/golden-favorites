@@ -48,9 +48,14 @@ import { MavenComponent } from './components/maven/maven.component';
 import { DockerComponent } from './components/docker/docker.component';
 import { NoSqlComponent } from './components/no-sql/no-sql.component';
 import { GitComponent } from './components/git/git.component';
-import { SpringComponent } from './spring/spring.component';
-import { SpringBootComponent } from './spring/spring-boot/spring-boot.component';
-import { SpringBatchComponent } from './spring/spring-batch/spring-batch.component';
+import { SpringComponent } from './components/spring/spring.component';
+import { SpringBootComponent } from './components/spring/spring-boot/spring-boot.component';
+import { SpringBatchComponent } from './components/spring/spring-batch/spring-batch.component';
+import { ElasticsearchComponent } from './components/elasticsearch/elasticsearch.component';
+import { SpringLinkComponent } from './components/spring/spring-link/spring-link.component';
+import { AngularLinkComponent } from './components/angular/angular-link/angular-link.component';
+import { LinuxComponent } from './components/linux/linux.component';
+
 
 registerLocaleData(localeFr);
 
@@ -100,7 +105,11 @@ export const MY_FORMATS = {
     DockerComponent,
     NoSqlComponent,
     GitComponent,
-    SpringComponent
+    SpringComponent,
+    ElasticsearchComponent,
+    SpringLinkComponent,
+    AngularLinkComponent,
+    LinuxComponent
   ],
   imports: [
     HttpClientModule,

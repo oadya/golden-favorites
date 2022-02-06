@@ -13,8 +13,8 @@ import { JenkinsComponent } from './components/jenkins/jenkins.component';
 import { LayoutComponent } from './components/layout/layout.component';
 import { MavenComponent } from './components/maven/maven.component';
 import { NoSqlComponent } from './components/no-sql/no-sql.component';
-import { SpringBatchComponent } from './spring/spring-batch/spring-batch.component';
-import { SpringBootComponent } from './spring/spring-boot/spring-boot.component';
+import { SpringBatchComponent } from './components/spring/spring-batch/spring-batch.component';
+import { SpringBootComponent } from './components/spring/spring-boot/spring-boot.component';
 import { BusinessWebsiteComponent } from './components/web-pages/business-website/business-website.component';
 import { DropDownMenuComponent } from './components/web-pages/drop-down-menu/drop-down-menu.component';
 import { EcommerceWebsiteComponent } from './components/web-pages/ecommerce-website/ecommerce-website.component';
@@ -24,7 +24,11 @@ import { HtmlSelectorComponent } from './components/web-pages/html-selector/html
 import { LoginRegistretionComponent } from './components/web-pages/login-registretion/login-registretion.component';
 import { TemplateWebsiteOneComponent } from './components/web-pages/template-website-one/template-website-one.component';
 import { WebPagesComponent } from './components/web-pages/web-pages.component';
-import { SpringComponent } from './spring/spring.component';
+import { SpringComponent } from './components/spring/spring.component';
+import { ElasticsearchComponent } from './components/elasticsearch/elasticsearch.component';
+import { SpringLinkComponent } from './components/spring/spring-link/spring-link.component';
+import { AngularLinkComponent } from './components/angular/angular-link/angular-link.component';
+import { LinuxComponent } from './components/linux/linux.component';
 
 const routes: Routes = [
   {
@@ -44,6 +48,10 @@ const routes: Routes = [
         component: SpringComponent,
         children: [
           {
+            path: 'spring-link',
+            component: SpringLinkComponent,
+          },
+          {
             path: 'spring-boot',
             component: SpringBootComponent,
           },
@@ -59,6 +67,10 @@ const routes: Routes = [
         component: JenkinsComponent,
       },
 
+      {
+        path: 'elasticsearch',
+        component: ElasticsearchComponent,
+      },
       {
         path: 'maven',
         component: MavenComponent,
@@ -79,11 +91,19 @@ const routes: Routes = [
         path: 'git',
         component: GitComponent,
       },
+      
+      {
+        path: 'linux',
+        component: LinuxComponent,
+      },
       {
         path: 'angular',
         component: AngularComponent,
         children: [
           {
+            path: 'angular-link',
+            component: AngularLinkComponent,
+          }, {
             path: 'rib-sepa',
             component: RibSepaComponent,
           },

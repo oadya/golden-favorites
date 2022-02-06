@@ -14,7 +14,7 @@ export class SpringComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    this.router.navigate(['./spring-boot'], { relativeTo: this.route });
+    this.router.navigate(['./spring-link'], { relativeTo: this.route });
   }
 
 }

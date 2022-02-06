@@ -15,7 +15,7 @@ export class LayoutComponent implements OnInit, OnDestroy {
     private messageService: MessageService) { }
 
   ngOnInit(): void {
-    this.router.navigate(['home']);
+    this.router.navigate(['dashboard']);
   }
 
 

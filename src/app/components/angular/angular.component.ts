@@ -14,7 +14,7 @@ export class AngularComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    this.router.navigate(['./rib-sepa'], { relativeTo: this.route });
+    this.router.navigate(['./angular-link'], { relativeTo: this.route });
   }
 
 }

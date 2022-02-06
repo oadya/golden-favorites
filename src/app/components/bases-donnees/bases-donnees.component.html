@@ -1,1 +1,22 @@
-<p>bases-donnees works!</p>
+<h4> SQL Links </h4>
+<ul>
+    <li *ngFor="let current of othersLinks">
+
+        <a href="{{current}}" target="blank">
+            <span> {{ current }}
+            </span>
+        </a>
+    </li>
+</ul>
+
+
+<h4> PL/SQL Links </h4>
+<ul>
+    <li *ngFor="let current of plsqlLinks">
+
+        <a href="{{current}}" target="blank">
+            <span> {{ current }}
+            </span>
+        </a>
+    </li>
+</ul>

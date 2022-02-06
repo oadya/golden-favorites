@@ -1,9 +1,20 @@
 <h4>JAVA projects</h4>
 <ul>
-    <li *ngFor="let current of allLinks">
+    <li *ngFor="let current of javaLinks">
 
         <a href="{{current.link}}" target="blank">
             <span> {{ current.title }}
+            </span>
+        </a>
+    </li>
+</ul>
+
+<h4>JAVA Others links</h4>
+<ul>
+    <li *ngFor="let current of javaOhersLinks">
+
+        <a href="{{current}}" target="blank">
+            <span> {{ current }}
             </span>
         </a>
     </li>
