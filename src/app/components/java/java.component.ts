@@ -25,7 +25,7 @@ export class JavaComponent implements OnInit {
     },
   ];
 
-  
+
   javaJAXBLinks: any[] = [
     "https://www.baeldung.com/jvm-parameters",
     "http://www.javawebtutor.com/articles/jaxb/jaxb_java_class_from_xsd.php",
@@ -43,11 +43,13 @@ export class JavaComponent implements OnInit {
     "http://tutorials.jenkov.com/java-internationalization/decimalformat.html",
     "http://www.avajava.com/tutorials/categories/general-java",
     "https://examples.javacodegeeks.com/core-java/xml/bind/jaxb-generate-classes-xsd/",
-      
+
   ];
 
 
   javaOhersLinks: any[] = [
+    "https://koor.fr/Java/Index.wp",
+    "https://github.com/mohamedYoussfi/digital-crypto-java",
     "https://howtodoinjava.com/java/generics/complete-java-generics-tutorial/",
     "https://www.javaguides.net/p/java-multithreading-utorial.html",
     "https://www.javacodegeeks.com/2016/12/mapstruct-transferring-data-one-bean-another.html",

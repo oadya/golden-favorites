@@ -9,6 +9,10 @@ export class SpringLinkComponent implements OnInit {
 
 
   allLinks: any[] = [
+    "https://github.com/mohamedYoussfi/spring-security-jwt-micro-service",
+    "https://github.com/dailycodebuffer/Spring-MVC-Tutorials",
+    "https://github.com/github4codedebugger/async-springboot/",
+    "https://github.com/Java-Techie-jt/springboot-multithreading-example",
     "https://howtodoinjava.com/spring-rest/spring-rest-crud-jpa-example/",
     "https://www.codesenior.com/en/tutorial/Spring-Generic-DAO-and-Generic-Service-Implementation",
     "https://www.petrikainulainen.net/programming/spring-framework/spring-data-jpa-tutorial-part-two-crud/",
@@ -40,6 +44,12 @@ export class SpringLinkComponent implements OnInit {
     "https://docs.spring.io/spring-batch/docs/current/reference/html/step.html",
     "https://thepracticaldeveloper.com/guide-spring-boot-controller-tests/",
     "https://www.baeldung.com/cron-expressions",
+    "https://www.baeldung.com/spring-scheduled-tasks",
+    "http://www.quartz-scheduler.org/documentation/quartz-2.3.0/tutorials/crontrigger.html",
+    "https://dzone.com/articles/running-on-time-with-springs-scheduled-tasks",
+    "https://reflectoring.io/spring-scheduler/",
+    "https://www.callicoder.com/spring-boot-task-scheduling-with-scheduled-annotation/",
+    "https://devstory.net/11131/executer-des-taches-planifiees-en-arriere-plan-dans-spring",
     "https://www.baeldung.com/spring-classpath-file-access",
     "https://frontbackend.com/linux/cron-every-30-minutes",
     "https://dzone.com/articles/working-with-spring-boot-and-hazelcastdistributed",
