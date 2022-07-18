@@ -1,6 +1,65 @@
-<h4>Eastic Search</h4>
+<h4>Elastic Tutos</h4>
 <ul>
-    <li *ngFor="let current of allLinks">
+    <li *ngFor="let current of bestTutoLinks">
+
+        <a href="{{current}}" target="blank">
+            <span> {{ current}}
+            </span>
+        </a>
+    </li>
+</ul>
+
+
+
+<h4>Elastic CO</h4>
+<ul>
+    <li *ngFor="let current of elasticLinks">
+
+        <a href="{{current}}" target="blank">
+            <span> {{ current}}
+            </span>
+        </a>
+    </li>
+</ul>
+
+
+<h4>Elastic Pagination</h4>
+<ul>
+    <li *ngFor="let current of elasticPaginationLinks">
+
+        <a href="{{current}}" target="blank">
+            <span> {{ current}}
+            </span>
+        </a>
+    </li>
+</ul>
+
+<h4>Elastic github</h4>
+<ul>
+    <li *ngFor="let current of githubLinks">
+
+        <a href="{{current}}" target="blank">
+            <span> {{ current}}
+            </span>
+        </a>
+    </li>
+</ul>
+
+
+<h4>Elastic Tests</h4>
+<ul>
+    <li *ngFor="let current of integrationTestLinks">
+
+        <a href="{{current}}" target="blank">
+            <span> {{ current}}
+            </span>
+        </a>
+    </li>
+</ul>
+
+<h4>Elastic Others Links</h4>
+<ul>
+    <li *ngFor="let current of othersLinks">
 
         <a href="{{current}}" target="blank">
             <span> {{ current}}

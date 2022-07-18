@@ -10,6 +10,7 @@ export class LinuxComponent implements OnInit {
 
   linuxLinks: any[] = [
     "https://www.tutoriels-video.fr/category/ubuntu/ubuntu-tutoriel-video/",
+    "https://www.cyberciti.biz/faq/howto-use-grep-command-in-linux-unix/",
     "https://crontab.guru/",
     "https://doc.ubuntu-fr.org/tutoriel/script_shell",
     "http://www.funix.org/fr/unix/",

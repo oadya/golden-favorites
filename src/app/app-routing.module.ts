@@ -29,6 +29,7 @@ import { ElasticsearchComponent } from './components/elasticsearch/elasticsearch
 import { SpringLinkComponent } from './components/spring/spring-link/spring-link.component';
 import { AngularLinkComponent } from './components/angular/angular-link/angular-link.component';
 import { LinuxComponent } from './components/linux/linux.component';
+import { GlobalLinkComponent } from './components/global-link/global-link.component';
 
 const routes: Routes = [
   {
@@ -38,6 +39,10 @@ const routes: Routes = [
       {
         path: 'dashboard',
         component: HomeComponent,
+      },
+      {
+        path: 'best-sites-and-channels',
+        component: GlobalLinkComponent,
       },
       {
         path: 'java',

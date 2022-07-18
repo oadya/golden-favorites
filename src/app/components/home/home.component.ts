@@ -16,6 +16,11 @@ export class HomeComponent implements OnInit {
   }
 
 
+  global(): void {
+    this.router.navigate(['../best-sites-and-channels'], { relativeTo: this.route });
+  }
+
+
   java(): void {
     this.router.navigate(['../java'], { relativeTo: this.route });
   }

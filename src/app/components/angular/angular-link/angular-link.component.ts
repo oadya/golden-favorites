@@ -208,7 +208,7 @@ export class AngularLinkComponent implements OnInit {
   ];
 
   othersLinks: any[] = [
-
+"https://github.com/oadya/Javascript-Arrays/blob/main/array.js",
     "https://medium.com/@tarekabdelkhalek/how-to-create-a-drag-and-drop-file-uploading-in-angular-78d9eba0b854",
     "https://medium.com/@mariemchabeni/angular-7-drag-and-drop-simple-file-uploadin-in-less-than-5-minutes-d57eb010c0dc",
     "https://www.techtrek.io/Adding-a-Scroll-to-Top-button-in-Angular/",

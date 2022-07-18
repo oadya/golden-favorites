@@ -55,6 +55,7 @@ import { ElasticsearchComponent } from './components/elasticsearch/elasticsearch
 import { SpringLinkComponent } from './components/spring/spring-link/spring-link.component';
 import { AngularLinkComponent } from './components/angular/angular-link/angular-link.component';
 import { LinuxComponent } from './components/linux/linux.component';
+import { GlobalLinkComponent } from './components/global-link/global-link.component';
 
 
 registerLocaleData(localeFr);
@@ -109,7 +110,8 @@ export const MY_FORMATS = {
     ElasticsearchComponent,
     SpringLinkComponent,
     AngularLinkComponent,
-    LinuxComponent
+    LinuxComponent,
+    GlobalLinkComponent
   ],
   imports: [
     HttpClientModule,
