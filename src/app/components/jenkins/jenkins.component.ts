@@ -11,6 +11,14 @@ export class JenkinsComponent implements OnInit {
 
   allLinks: any[] = [
     {
+      "title": "JENKINS PIPELINE-SONARQUE-AWS",
+      "link": "https://github.com/oadya/cicd-pipeline-jenkins-sonar-aws",
+    },
+    {
+      "title": "JENKINS CICD",
+      "link": "https://github.com/oadya/formation-cicd",
+    },
+    {
       "title": "JENKINS + DOCKERS",
       "link": "https://github.com/oadya/jenkins-resources/tree/master/jenkins",
     },

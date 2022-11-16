@@ -10,9 +10,14 @@ export class DockerComponent implements OnInit {
   
 
   allLinks: any[] = [
+    
     {
-      "title": "DOCKERS +JENKINS ",
-      "link": "https://github.com/oadya/jenkins-resources/tree/master/jenkins",
+      "title": "DOCKER",
+      "link": "https://github.com/oadya/devops-docker",
+    },
+    {
+      "title": "KUBERNATES",
+      "link": "https://github.com/oadya/devops-kubernates",
     },
   ];
   constructor() { }
